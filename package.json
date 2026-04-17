@@ -1,0 +1,18 @@
+{
+  "name": "air-care-landing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "vite build",
+    "start": "node server.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "resend": "^6.12.0",
+    "tsx": "^4.21.0",
+    "vite": "^6.2.0"
+  }
+}

@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Care | Certified Air Duct & Vent Cleaning Gaithersburg MD</title>
+    <meta name="description" content="Professional Air Duct & Vent Cleaning in Gaithersburg, MD. Same-day appointments available. NADCA Certified. Call (240) 364-4987.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0A1F44;
+            --amber: #F5A623;
+            --light-gray: #F4F6F9;
+            --white: #FFFFFF;
+            --text-dark: #1A1A1A;
+            --text-muted: #4A4A4A;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 16px;
+            min-height: 48px;
+        }
+
+        .btn-amber {
+            background-color: var(--amber);
+            color: var(--navy);
+        }
+
+        .btn-amber:hover {
+            background-color: #e0961d;
+            transform: translateY(-2px);
+        }
+
+        .pulse {
+            animation: pulse-animation 2s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(245, 166, 35, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 166, 35, 0); }
+        }
+
+        /* 1. STICKY HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--navy);
+            color: var(--white);
+            z-index: 1000;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            transition: height 0.3s ease;
+        }
+
+        header.shrink {
+            height: 56px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo-area {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+
+        .header-reviews {
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .header-reviews {
+                display: block;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        .header-cta {
+            margin-right: -15px;
+        }
+
+        /* 2. HERO SECTION */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            background: linear-gradient(rgba(10, 31, 68, 0.8), rgba(10, 31, 68, 0.8)), 
+                        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=2069') center/cover no-repeat;
+            color: var(--white);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1.2fr 0.8fr;
+            }
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-content h1 { font-size: 48px; }
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .trust-badges {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 640px) {
+            .trust-badges { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .badge {
+            font-size: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .hero-form {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            color: var(--text-dark);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .hero-form h3 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #DDD;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .form-footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 15px;
+            color: var(--text-muted);
+        }
+
+        .urgency-ribbon {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--amber);
+            color: var(--navy);
+            padding: 10px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 14px;
+            z-index: 10;
+        }
+
+        /* 3. SOCIAL PROOF BAR */
+        .social-proof {
+            background-color: var(--light-gray);
+            padding: 30px 0;
+            overflow: hidden;
+        }
+
+        .logo-strip {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo-strip img {
+            height: 40px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+        }
+
+        .ticker-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            border-top: 1px solid #DDD;
+            padding-top: 15px;
+        }
+
+        .ticker {
+            display: inline-block;
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .ticker-item {
+            display: inline-block;
+            margin-right: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* 4. SERVICES GRID */
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        @media (min-width: 768px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #EEE;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-color: var(--amber);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--navy);
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .service-price {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--navy);
+            margin: 15px 0;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--amber);
+            color: var(--navy);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        /* 5. BEFORE / AFTER SLIDER */
+        .ba-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 1024px) {
+            .ba-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .ba-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .ba-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ba-after {
+            clip-path: inset(0 0 0 50%);
+        }
+
+        .ba-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            cursor: ew-resize;
+            appearance: none;
+            z-index: 20;
+        }
+
+        .ba-slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 4px;
+            height: 100vh;
+            background: var(--amber);
+        }
+
+        .ba-label {
+            position: absolute;
+            bottom: 10px;
+            background: rgba(10, 31, 68, 0.8);
+            color: white;
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        .ba-label-before { left: 10px; }
+        .ba-label-after { right: 10px; }
+
+        /* 6. WHY AIR CARE */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 1024px) {
+            .why-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .why-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .why-item h4 { margin-top: 10px; }
+
+        .owner-quote {
+            background: var(--light-gray);
+            padding: 40px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .owner-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* 7. HOW IT WORKS */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+        }
+
+        @media (min-width: 1024px) {
+            .steps-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .steps-container::after {
+                content: '';
+                position: absolute;
+                top: 30px;
+                left: 10%;
+                width: 80%;
+                height: 2px;
+                border-top: 2px dashed var(--navy);
+                z-index: 1;
+            }
+        }
+
+        .step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--navy);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 auto 20px;
+        }
+
+        /* 8. REVIEWS */
+        .reviews-section {
+            background-color: #EEF2F8;
+        }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .review-card {
+            min-width: 100%;
+            padding: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .review-card { min-width: 50%; }
+        }
+
+        @media (min-width: 1024px) {
+            .review-card { min-width: 33.333%; }
+        }
+
+        .review-inner {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            height: 100%;
+        }
+
+        .stars { color: var(--amber); margin-bottom: 10px; }
+
+        /* 9. FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #EEE;
+        }
+
+        .faq-header {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 200px;
+            padding-bottom: 20px;
+        }
+
+        /* 10. FINAL CTA */
+        .final-cta {
+            background-color: var(--navy);
+            color: var(--white);
+        }
+
+        .final-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+        @media (min-width: 1024px) {
+            .final-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* 11. FOOTER */
+        footer {
+            background-color: #051024;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+
+        /* MOBILE STICKY BAR */
+        .mobile-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: var(--navy);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            z-index: 1001;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-bar { display: none; }
+        }
+
+        .mobile-bar a {
+            padding: 15px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        .mobile-call { color: white; border-right: 1px solid rgba(255,255,255,0.1); }
+        .mobile-book { background: var(--amber); color: var(--navy); }
+
+        /* UTILS */
+        .text-amber { color: var(--amber); }
+        .mt-20 { margin-top: 20px; }
+    </style>
+
+    <!-- LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Air Care",
+      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e",
+      "@id": "",
+      "url": "https://aircare-md.com",
+      "telephone": "(240) 364-4987",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gaithersburg, MD",
+        "addressLocality": "Gaithersburg",
+        "addressRegion": "MD",
+        "postalCode": "20877",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.1434,
+        "longitude": -77.2014
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/aircaremd",
+        "https://www.yelp.com/biz/air-care-gaithersburg"
+      ]
+    }
+    </script>
+
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often should I clean my air ducts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The NADCA recommends cleaning your air ducts every 3 to 5 years. However, if you have pets, allergies, or have recently completed a home renovation, you may want to clean them more frequently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the cleaning take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most residential air duct cleaning jobs take between 2 to 4 hours, depending on the size of the home and the number of vents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe for my kids and pets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We use HEPA-filtered vacuum systems and environmentally safe, non-toxic cleaning agents. Your family and pets can stay in the home during the process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What equipment do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use professional-grade negative air machines with HEPA filtration and high-pressure agitation tools to ensure all debris is removed from your system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer same-day service in Gaithersburg and Montgomery County?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we prioritize local calls in Gaithersburg and often have same-day or next-day availability for emergency cleaning needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas of Maryland do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve all of Montgomery County, including Gaithersburg, Rockville, Germantown, Bethesda, Potomac, Silver Spring, and surrounding areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer a satisfaction guarantee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We provide a 100% satisfaction guarantee. If you aren't happy with the results, we'll make it right."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is dryer vent cleaning so important?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clogged dryer vents are a leading cause of house fires. Regular cleaning improves dryer efficiency, saves energy, and prevents fire hazards."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- 1. STICKY HEADER -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <span class="logo-text">AIR CARE</span>
+                    <span class="tagline">Breathe the Difference</span>
+                </div>
+                <div class="header-reviews">
+                    ⭐⭐⭐⭐⭐ 500+ 5-Star Reviews
+                </div>
+                <div class="header-cta">
+                    <a href="tel:2403644987" class="btn btn-amber pulse">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        (240) 364-4987 — Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Breathe Cleaner Air Today — Professional Duct & Vent Cleaning in Gaithersburg, MD</h1>
+                    <p>Same-day & next-day appointments available. Serving Gaithersburg, Rockville, Germantown, Bethesda & all of Montgomery County.</p>
+                    
+                    <div class="trust-badges">
+                        <div class="badge">🛡 Licensed & Insured</div>
+                        <div class="badge">✅ NADCA Certified</div>
+                        <div class="badge">⏱ Same-Day Available</div>
+                        <div class="badge">💯 Satisfaction Guaranteed</div>
+                    </div>
+                </div>
+
+                <div class="hero-form-container">
+                    <form class="hero-form" id="hero-quote-form">
+                        <h3>Book With Us!</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Zip Code" required>
+                        </div>
+                        <button type="submit" class="btn btn-amber" style="width: 100%;">Book With Us! →</button>
+                        <p class="form-footer">No obligation. We call you within 15 minutes.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="urgency-ribbon">
+            🔥 Month Special: Dryer Vent Cleaning from $79 — Limited Slots This Month
+        </div>
+    </section>
+
+    <!-- 3. SOCIAL PROOF BAR -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="logo-strip">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Reviews">
+                <span style="font-weight: 700; color: #4A4A4A;">4.9 ★ (200+ reviews)</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Better_Business_Bureau_logo.svg" alt="BBB Accredited">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Yelp_Logo.svg" alt="Yelp">
+                <span style="font-weight: 700; color: #4A4A4A;">NADCA Member</span>
+            </div>
+            <div class="ticker-container">
+                <div class="ticker">
+                    <span class="ticker-item">"Best service in Gaithersburg!" - Sarah M.</span>
+                    <span class="ticker-item">"Rockville ducts look brand new." - James T.</span>
+                    <span class="ticker-item">"Germantown dryer vent was a fire hazard." - Linda K.</span>
+                    <span class="ticker-item">"Potomac home smells so much fresher." - Robert D.</span>
+                    <span class="ticker-item">"Bethesda team was professional & fast." - Emily W.</span>
+                    <span class="ticker-item">"Silver Spring chimney sweep was great." - Michael P.</span>
+                    <span class="ticker-item">"Chevy Chase HVAC is running better now." - David L.</span>
+                    <span class="ticker-item">"North Potomac same-day service saved us." - Karen B.</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span class="ticker-item">"Best service in Gaithersburg!" - Sarah M.</span>
+                    <span class="ticker-item">"Rockville ducts look brand new." - James T.</span>
+                    <span class="ticker-item">"Germantown dryer vent was a fire hazard." - Linda K.</span>
+                    <span class="ticker-item">"Potomac home smells so much fresher." - Robert D.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES GRID -->
+    <section class="section-padding" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>What We Clean — Pricing You Can Count On</h2>
+                <p>Transparent pricing. No hidden fees. Certified experts.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"></path></svg>
+                    </div>
+                    <h3>Air Duct Cleaning</h3>
+                    <p>Full system cleaning using high-power negative air pressure.</p>
+                    <div class="service-price" style="font-size: 20px; line-height: 1.4;">
+                        $99 <span style="font-size: 14px; font-weight: 600;">(&lt; 12 vents)</span><br>
+                        $189 <span style="font-size: 14px; font-weight: 600;">(&gt; 12 vents)</span>
+                    </div>
+                    <a href="#quote" class="text-amber" style="font-weight: 700;">Book This ↓</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <span class="popular-badge">Most Popular</span>
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                    </div>
+                    <h3>Dryer Vent Cleaning</h3>
+                    <p>Prevent fires and improve drying efficiency.</p>
+                    <div class="service-price text-amber">$79 Special</div>
+                    <a href="#quote" class="text-amber" style="font-weight: 700;">Book This ↓</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"></path></svg>
+                    </div>
+                    <h3>Furnace Cleaning</h3>
+                    <p>Deep cleaning of furnace components and blower motor.</p>
+                    <div class="service-price">FREE with Ducts</div>
+                    <a href="#quote" class="text-amber" style="font-weight: 700;">Book This ↓</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    </div>
+                    <h3>Chimney Sweep</h3>
+                    <p>Removal of creosote and debris for safe fireplace use. <strong>FREE inspection with Air Duct cleaning.</strong></p>
+                    <div class="service-price">From $100</div>
+                    <a href="#quote" class="text-amber" style="font-weight: 700;">Book This ↓</a>
+                </div>
+                <!-- Card 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path></svg>
+                    </div>
+                    <h3>Fireplace Cleaning</h3>
+                    <p>Interior cleaning and inspection of fireplace hearth. <strong>FREE inspection with Air Duct cleaning.</strong></p>
+                    <div class="service-price">From $89</div>
+                    <a href="#quote" class="text-amber" style="font-weight: 700;">Book This ↓</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. WHY AIR CARE -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Thousands of Maryland Homeowners Choose Air Care</h2>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-features">
+                    <div class="why-item">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <h4>NADCA Certified</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">Trained to the highest industry standards.</p>
+                    </div>
+                    <div class="why-item">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <h4>Same or Next-Day</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">Fast response for your busy schedule.</p>
+                    </div>
+                    <div class="why-item">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l2 2h5a2 2 0 0 1 2 2z"></path></svg>
+                        <h4>Photo & Video Report</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">See exactly what we cleaned.</p>
+                    </div>
+                    <div class="why-item">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        <h4>Upfront Pricing</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">No surprises. No hidden fees.</p>
+                    </div>
+                </div>
+
+                <div class="owner-quote">
+                    <p class="quote-text">"We treat every home like it's our own. Our goal is simple: cleaner air and safer homes for our neighbors in Montgomery County."</p>
+                    <p style="font-weight: 800;">Francisco Cedillo</p>
+                    <p style="font-size: 12px; color: var(--text-muted);">CEO, Air Care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. HOW IT WORKS -->
+    <section class="section-padding" style="background-color: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works — 3 Simple Steps</h2>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Book Online or Call</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Call (240) 364-4987 or book online. Confirmed in 15 min.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Expert Cleaning</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Certified tech arrives on time. Full inspection + HEPA cleaning.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Breathe Easy</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Clean report + before/after photos sent same day.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px; font-weight: 600;">Most jobs completed in 2–3 hours</p>
+        </div>
+    </section>
+
+    <!-- 8. CUSTOMER REVIEWS -->
+    <section class="section-padding reviews-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Maryland Customers Are Saying</h2>
+            </div>
+
+            <div class="carousel" id="review-carousel">
+                <div class="carousel-track">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-inner">
+                            <div class="stars">★★★★★</div>
+                            <p>"Air Care was fantastic! They showed up on time in Gaithersburg and my ducts are finally clean. Highly recommend!"</p>
+                            <p style="margin-top: 15px; font-weight: 700;">Sarah M. · Gaithersburg</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" height="15" style="margin-top: 10px; opacity: 0.5;">
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-inner">
+                            <div class="stars">★★★★★</div>
+                            <p>"The dryer vent cleaning was quick and professional. Peace of mind for my Rockville home."</p>
+                            <p style="margin-top: 15px; font-weight: 700;">James T. · Rockville</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" height="15" style="margin-top: 10px; opacity: 0.5;">
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-inner">
+                            <div class="stars">★★★★★</div>
+                            <p>"Best chimney sweep in Germantown. They were very clean and left no mess at all."</p>
+                            <p style="margin-top: 15px; font-weight: 700;">Linda K. · Germantown</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" height="15" style="margin-top: 10px; opacity: 0.5;">
+                        </div>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="review-card">
+                        <div class="review-inner">
+                            <div class="stars">★★★★★</div>
+                            <p>"Professional team and great results in Potomac. The air smells so much better now."</p>
+                            <p style="margin-top: 15px; font-weight: 700;">Robert D. · Potomac</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" height="15" style="margin-top: 10px; opacity: 0.5;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" style="font-weight: 700; text-decoration: underline;">Read all 200+ reviews on Google →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ ACCORDION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-header">How often should I clean my air ducts? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>The NADCA recommends cleaning your air ducts every 3 to 5 years. However, if you have pets, allergies, or have recently completed a home renovation, you may want to clean them more frequently.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">How long does the cleaning take? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>Most residential air duct cleaning jobs take between 2 to 4 hours, depending on the size of the home and the number of vents.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Is it safe for my kids and pets? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>Yes! We use HEPA-filtered vacuum systems and environmentally safe, non-toxic cleaning agents. Your family and pets can stay in the home during the process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">What equipment do you use? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>We use professional-grade negative air machines with HEPA filtration and high-pressure agitation tools to ensure all debris is removed from your system.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Do you offer same-day service in Gaithersburg? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>Yes, we prioritize local calls in Gaithersburg and often have same-day or next-day availability for emergency cleaning needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">What areas of Maryland do you serve? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>We serve all of Montgomery County, including Gaithersburg, Rockville, Germantown, Bethesda, Potomac, Silver Spring, and surrounding areas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Do you offer a satisfaction guarantee? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>Absolutely. We provide a 100% satisfaction guarantee. If you aren't happy with the results, we'll make it right.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Why is dryer vent cleaning so important? <span>+</span></button>
+                    <div class="faq-content">
+                        <p>Clogged dryer vents are a leading cause of house fires. Regular cleaning improves dryer efficiency, saves energy, and prevents fire hazards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FINAL CTA + FULL FORM -->
+    <section class="section-padding final-cta" id="quote">
+        <div class="container">
+            <div class="final-grid">
+                <div>
+                    <h2 style="font-size: 36px; margin-bottom: 20px;">Ready for Cleaner Air in Your Maryland Home?</h2>
+                    <p style="font-size: 18px; opacity: 0.9; margin-bottom: 30px;">Same or next-day service in Gaithersburg and all of Montgomery County. Satisfaction guaranteed.</p>
+                    <div style="font-size: 24px; font-weight: 800; margin-bottom: 20px;">
+                        Or call us directly:<br>
+                        <a href="tel:2403644987" class="text-amber">(240) 364-4987</a>
+                    </div>
+                </div>
+
+                <div id="final-form-container">
+                    <form class="hero-form" id="final-quote-form" style="box-shadow: none;">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option>Air Duct Cleaning</option>
+                                <option>Dryer Vent Cleaning</option>
+                                <option>Furnace Cleaning</option>
+                                <option>Chimney Sweep</option>
+                                <option>Fireplace Cleaning</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Zip Code" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="pref-date" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Optional Message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-amber" style="width: 100%;">Schedule My Cleaning →</button>
+                        <p class="form-footer">🔒 No spam. No pressure. Just clean air.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo-area" style="margin-bottom: 20px;">
+                        <span class="logo-text">AIR CARE</span>
+                        <span class="tagline">Breathe the Difference</span>
+                    </div>
+                    <p style="font-size: 14px; opacity: 0.7;">Professional air duct and vent cleaning services in Montgomery County, MD.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">Quick Links</h4>
+                    <ul style="font-size: 14px; opacity: 0.8;">
+                        <li style="margin-bottom: 10px;"><a href="#">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#services">Services</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#quote">Book With Us!</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">Contact Info</h4>
+                    <p style="font-size: 14px; opacity: 0.8; margin-bottom: 10px;">Gaithersburg, MD</p>
+                    <p style="font-size: 14px; opacity: 0.8; margin-bottom: 10px;">Phone: (240) 364-4987</p>
+                    <p style="font-size: 14px; opacity: 0.8;">Hours: Mon-Sat 7am-7pm</p>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 30px; font-size: 12px; opacity: 0.6;">
+                <strong>Service Areas:</strong> Gaithersburg, Rockville, Germantown, Bethesda, Potomac, Silver Spring, Chevy Chase, North Potomac, Damascus, Olney
+            </div>
+
+            <div class="footer-bottom">
+                © 2025 Air Care | Privacy Policy | Terms of Service
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY BAR -->
+    <div class="mobile-bar">
+        <a href="tel:2403644987" class="mobile-call">Call (240) 364-4987</a>
+        <a href="#quote" class="mobile-book">Book Online</a>
+    </div>
+
+    <script>
+        // Header shrink on scroll
+        window.onscroll = function() {
+            const header = document.getElementById('main-header');
+            if (window.pageYOffset > 80) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+        };
+
+        // FAQ Accordion
+        const faqHeaders = document.querySelectorAll('.faq-header');
+        faqHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                    header.querySelector('span').innerText = '-';
+                } else {
+                    header.querySelector('span').innerText = '+';
+                }
+            });
+        });
+
+        // Review Carousel
+        const track = document.querySelector('.carousel-track');
+        let index = 0;
+        const totalCards = document.querySelectorAll('.review-card').length;
+        
+        function moveCarousel() {
+            const cardWidth = document.querySelector('.review-card').offsetWidth;
+            index++;
+            if (index >= totalCards) index = 0;
+            track.style.transform = `translateX(-${index * cardWidth}px)`;
+        }
+
+        let carouselInterval = setInterval(moveCarousel, 4000);
+
+        document.getElementById('review-carousel').addEventListener('mouseenter', () => {
+            clearInterval(carouselInterval);
+        });
+
+        document.getElementById('review-carousel').addEventListener('mouseleave', () => {
+            carouselInterval = setInterval(moveCarousel, 4000);
+        });
+
+        // Form Submission
+        const forms = ['hero-quote-form', 'final-quote-form'];
+        forms.forEach(formId => {
+            const form = document.getElementById(formId);
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const container = form.parentElement;
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalBtnText = submitBtn.innerText;
+                    
+                    // Show loading state
+                    submitBtn.innerText = "Sending...";
+                    submitBtn.disabled = true;
+
+                    // Extract data based on form structure
+                    const data = {
+                        formType: formId === 'hero-quote-form' ? 'Quick Quote' : 'Full Schedule',
+                        name: form.querySelector('input[placeholder*="Name"]').value,
+                        phone: form.querySelector('input[type="tel"]').value,
+                        email: form.querySelector('input[type="email"]')?.value || '',
+                        service: form.querySelector('select')?.value || '',
+                        zip: form.querySelector('input[placeholder*="Zip"]').value,
+                        date: form.querySelector('input[type="date"]')?.value || '',
+                        message: form.querySelector('textarea')?.value || ''
+                    };
+
+                    try {
+                        const response = await fetch('/api/submit', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data)
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            container.innerHTML = `
+                                <div style="text-align: center; padding: 40px; background: white; border-radius: 12px; color: var(--navy);">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" style="margin-bottom: 20px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                    <h3>Thank You!</h3>
+                                    <p>We've received your request. An Air Care expert will call you within 15 minutes.</p>
+                                </div>
+                            `;
+                        } else {
+                            throw new Error(result.error || 'Submission failed');
+                        }
+                    } catch (error) {
+                        console.error('Submission error:', error);
+                        alert('Sorry, there was an error sending your request: ' + error.message);
+                        submitBtn.innerText = originalBtnText;
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+        });
+
+        // Set min date for date input
+        const dateInput = document.getElementById('pref-date');
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
